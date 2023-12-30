@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BMI Calculater </title>
+    <!-- CDN link for google font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: cadetblue;
+            font-family: 'Roboto Slab', serif;
+        }
+        .box {
+            width: 450px;
+            height: 500px;
+            background-color: cornflowerblue;
+            margin: 100px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        #heading{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .box2{
+            width: 300px;
+            height: 100px;
+            background-color: white;
+            margin-left: 75px;
+            border-radius: 5px;
+
+        }
+        #heading2{
+            text-align: center;
+            padding-top: 37.5px;
+        }
+
+    .box3{
+        width: 300px;
+        height: 220px;
+        background-color: white;
+        margin-left: 75px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    .box4{
+        width: 100px;
+        height: 100px;
+        background-color: wheat;
+        margin-left: 30px;
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 5px;
+
+    }
+    input[type="number"]{
+        width: 50px;
+        height: 30px;
+        margin-left: 20px;
+        
+    }
+    #height{
+        text-align: center;
+        margin-left: 25px;
+    }
+    .box5{
+        width: 100px;
+        height: 100px;
+        border: 2px slategrey;
+        background-color: wheat;
+        margin-left: 30px;
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    #weight{
+        text-align: center;
+        margin-left: 25px;
+        margin-top: 20px;
+        
+    }
+    button[type="submit"]{
+        background-color: rgb(54, 54, 113);
+        color: white;
+        height: 30px;
+        margin-left: 50px;
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 200px;
+    }
+    button[type="reset"]{
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        margin-left: 50px;
+        height: 30px;
+        margin-top: 10px;
+        width: 200px;
+    }
+    #v {
+        margin-left: 25px;
+    }
+
+    </style>
+</head>
+<body>
+<form action="">
+    <div class="box">
+        <h1 id="heading"> BMI Calculater</h1>
+        <div class="box2"> 
+            <h2 id="heading2"> Your BMI : 00</h2>
+        </div>
+        <div class="box3">
+        <div class="box4">
+            <label id="height"> Height </label><br><label id="v">( cm ) </label>
+            <input type="number" placeholder="cm">
+        </div>
+        <div class="box5">
+            <label id="weight"> Weight </label>
+         <br><label id="v">( kg )</label>
+        
+            <input type="number" placeholder="kg">
+        </div>
+
+        <button type="submit">Calculate BMI </button>
+        <br>
+        <button type="reset"> Reset </button>
+
+        </div>
+
+    </div>
+</form>
+    
+</body>
+</html>
